@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    <!-- header  icon and log-->
+     <div>
+        <!-- log and icon div -->
+         <div class="flex justify-between  p-4 px-9 ">
+        <!-- log -->
+            <div>
+                <img class="h-[50px] bs:h-[100px] " src="/src/img/svg_.svg" alt="">
+            </div>
+            <!-- icons -->
+            <div class="flex gap-x-3 ">
+                <!-- small screens icons -->
+                 <span class="bs:hidden flex gap-6">
+                    <ion-icon class="text-4xl" name="search"></ion-icon>
+                    <img class="h-[30px]" src="/src/img/globe-solid.svg" alt="">
+                    <ion-icon class="text-5xl bolder bg-[#007755] text-white font-extrabold" name="menu"></ion-icon>
+                 </span>
+               <!-- big screen icons -->
+                <div class="hidden bs:block ">
+                    <span class="bs:flex gap-x-5 font-light text-gray-500  ">
+                        <p class="hover:text-[#007755] duration-500">Home</p>
+                        <p class="hover:text-[#007755] duration-500">Plain Language</p>
+                        <p class="hover:text-[#007755] duration-500">Legals</p>
+                        <p class="hover:text-[#007755] duration-500">Privacy Policy</p>
+                        <p class="hover:text-[#007755] duration-500">Accessibility</p>
+                        <p class="hover:text-[#007755] duration-500">Sitemap</p>
+                        <p class="hover:text-[#007755] duration-500">Intranet</p>
+                        <span class="flex gap-x-1">
+                        <img class="h-[16px] mt-1" src="/src/img/5aed9939-1a01-423f-98f7-ec0eaa89e88b.svg" alt="">
+                        <p class="hover:text-[#007755] ">KIT</p></span>
+                        <span class="flex gap-x-1">
+                            <img class="h-[16px] mt-1" src="/src/img/globe-solid.svg" alt="">
+                            <p class="hover:text-[#007755]">DE</p></span>
+                        <ion-icon class="text-2xl text-black" name="search"></ion-icon>
+                    </span>
+                    <span class="flex justify-end space-x-5 pt-4  font-bold text-gray-600">
+                        <p>KIT</p>
+                        <p>Topics</p>
+                        <p>Studies</p>
+                        <p>Research</p>
+                        <p>Innovation</p>
+                        <p>Career</p>
+                        <ion-icon class="text-2xl text-gray-600" name="home"></ion-icon>
+                    </span>
+            </div>
+            </div>
+             </div>
+        </div>
+     </div>
+     <!-- second section -->
+      <div id="container" class="relative bg-cover bg-center transition-all duration-100">
+        <!-- heading -->
+         <div>
+            <h6>hello world</h6>
+         </div>
+         <!-- events -->
+          <div>
+
+          </div>
+      </div>
+      <script>
+        let =current=0;
+        const arr=[
+            'url(img/header-Studieren-KIT-2024.jpg)',
+            'url(img/dna-computing_header.jpg)',
+            'url(img/header-Studieren-KIT-2024.jpg)'
+        ];
+        const container=document.getElementById("container");
+        setInterval(()=>{
+            current = (current + 1) % images.length;
+            container.style.backgroundImage=arr[current];
+        },200)
+      </script>
+</body>
+</html>
